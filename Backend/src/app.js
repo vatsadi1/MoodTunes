@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://mood-tunes-iota.vercel.app",
+    origin: import.meta.env.VITE_CLIENT_URL || "http://localhost:5173",
     credentials: true
 }))
 
