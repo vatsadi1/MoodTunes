@@ -36,7 +36,6 @@ export async function login({ email, username, password }) {
         return response.data;
     } catch (err) {
         console.log(err);
-        console.log(err.response.data);
         throw err;
     }
 }
