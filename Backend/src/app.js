@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://moooodtunesss.netlify.app",
+    origin: "https://mood-tunes-iota.vercel.app",
     credentials: true
 }))
 
